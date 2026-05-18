@@ -14,7 +14,1121 @@
 </head>
 
 <body>
-  
+
+  <!-- CANVAS FOR PARTICLE BACKGROUND -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <img src="logo.png" alt="Mustufa Abbas" class="logo-img" />
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">What I Do</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#creatives">Creatives</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting reveal">Hello, I'm</p>
+        <h1 class="hero-name reveal">Mustufa<br />Abbas</h1>
+        <p class="hero-tagline reveal"><em>I make founders' lives<br />easier — and more enjoyable.</em></p>
+        <div class="hero-industries reveal">
+          <span class="industry-label">Bringing expertise from following industries:</span>
+          <div class="industry-pills">
+            <span class="i-pill" style="--d:0.8s">Automobile</span>
+            <span class="i-pill" style="--d:0.95s">Tech & Gadgets</span>
+            <span class="i-pill" style="--d:1.1s">Gifting</span>
+            <span class="i-pill" style="--d:1.25s">Digital Marketing</span>
+            <span class="i-pill" style="--d:1.4s">E-Commerce</span>
+          </div>
+        </div>
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn-primary">See My Work</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-character reveal">
+        <svg class="character-svg" viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg"
+          aria-label="Mustafa waving hello">
+          <!-- Shadow -->
+          <ellipse cx="140" cy="408" rx="70" ry="10" fill="#2D6A4F" opacity="0.12" />
+
+          <!-- Legs -->
+          <rect x="105" y="300" width="28" height="90" rx="14" fill="#1a1a2e" />
+          <rect x="147" y="300" width="28" height="90" rx="14" fill="#1a1a2e" />
+          <!-- Shoes -->
+          <ellipse cx="119" cy="390" rx="20" ry="9" fill="#141414" />
+          <ellipse cx="161" cy="390" rx="20" ry="9" fill="#141414" />
+
+          <!-- Body / T-shirt -->
+          <rect x="90" y="195" width="100" height="115" rx="18" fill="#2D6A4F" />
+          <!-- T-shirt collar -->
+          <path d="M125 195 Q140 210 155 195" fill="none" stroke="#EAF4EE" stroke-width="2.5" />
+          <!-- T-shirt text MUSTAFA -->
+          <text x="140" y="248" text-anchor="middle" font-family="DM Mono, monospace" font-size="11" font-weight="500"
+            fill="#EAF4EE" letter-spacing="1.5">MUSTUFA</text>
+          <!-- Subtle stripe on shirt -->
+          <line x1="90" y1="270" x2="190" y2="270" stroke="#52B788" stroke-width="1.5" opacity="0.5" />
+
+          <!-- Left Arm (fixed — attached to body left edge at x=90) -->
+          <rect x="62" y="198" width="30" height="78" rx="15" fill="#c8956c" transform="rotate(8 92 210)" />
+          <!-- Left Hand -->
+          <ellipse cx="76" cy="282" rx="14" ry="12" fill="#c8956c" />
+
+          <!-- Right Arm (raised, waving) — animated -->
+          <g class="wave-arm" transform-origin="185 205">
+            <rect x="185" y="190" width="30" height="85" rx="15" fill="#c8956c" transform="rotate(-35 185 205)" />
+            <!-- Right Hand with wave fingers -->
+            <g transform="translate(200, 148) rotate(-35 0 0)">
+              <ellipse cx="0" cy="0" rx="16" ry="13" fill="#c8956c" />
+              <!-- Fingers -->
+              <rect x="-10" y="-22" width="7" height="16" rx="3.5" fill="#c8956c" />
+              <rect x="-2" y="-25" width="7" height="18" rx="3.5" fill="#c8956c" />
+              <rect x="6" y="-23" width="7" height="17" rx="3.5" fill="#c8956c" />
+              <rect x="13" y="-18" width="6" height="14" rx="3" fill="#c8956c" />
+            </g>
+          </g>
+
+          <!-- Neck -->
+          <rect x="127" y="178" width="26" height="22" rx="8" fill="#c8956c" />
+
+          <!-- Head -->
+          <ellipse cx="140" cy="148" rx="52" ry="56" fill="#c8956c" />
+
+          <!-- Hair -->
+          <path d="M88 130 Q90 78 140 72 Q190 78 192 130 Q185 100 140 95 Q95 100 88 130Z" fill="#1a1a1a" />
+          <!-- Hair highlight -->
+          <path d="M105 90 Q118 82 133 85" stroke="#333" stroke-width="2" fill="none" opacity="0.5" />
+
+          <!-- Eyes -->
+          <ellipse cx="122" cy="148" rx="9" ry="10" fill="white" />
+          <ellipse cx="158" cy="148" rx="9" ry="10" fill="white" />
+          <circle cx="124" cy="150" r="6" fill="#1a1a1a" />
+          <circle cx="160" cy="150" r="6" fill="#1a1a1a" />
+          <!-- Pupils shine -->
+          <circle cx="126" cy="148" r="2" fill="white" />
+          <circle cx="162" cy="148" r="2" fill="white" />
+          <!-- Eyebrows -->
+          <path d="M112 135 Q122 130 132 134" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <path d="M148 134 Q158 130 168 135" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+          <!-- Smile -->
+          <path d="M125 168 Q140 180 155 168" stroke="#7a3a1a" stroke-width="2.5" fill="none" stroke-linecap="round" />
+
+          <!-- Ear -->
+          <ellipse cx="88" cy="152" rx="9" ry="12" fill="#c8956c" />
+          <ellipse cx="192" cy="152" rx="9" ry="12" fill="#c8956c" />
+
+          <!-- Glasses -->
+          <rect x="111" y="141" width="22" height="16" rx="5" fill="none" stroke="#2D6A4F" stroke-width="2" />
+          <rect x="147" y="141" width="22" height="16" rx="5" fill="none" stroke="#2D6A4F" stroke-width="2" />
+          <line x1="133" y1="149" x2="147" y2="149" stroke="#2D6A4F" stroke-width="2" />
+          <line x1="88" y1="149" x2="111" y2="149" stroke="#2D6A4F" stroke-width="1.5" />
+          <line x1="169" y1="149" x2="192" y2="149" stroke="#2D6A4F" stroke-width="1.5" />
+
+          <!-- Hi speech bubble -->
+          <g class="speech-bubble">
+            <rect x="195" y="60" width="64" height="38" rx="10" fill="#2D6A4F" />
+            <polygon points="205,98 215,98 210,112" fill="#2D6A4F" />
+            <text x="227" y="84" text-anchor="middle" font-family="Playfair Display, serif" font-size="18"
+              font-weight="700" fill="white" font-style="italic">Hi!</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY MARQUEE STRIP -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Organic Ads</span><span class="sep">·</span>
+      <span>Meta Ads</span><span class="sep">·</span>
+      <span>TikTok Ads</span><span class="sep">·</span>
+      <span>SnapChat Ads</span><span class="sep">·</span>
+      <span>Chat GPT</span><span class="sep">·</span>
+      <span>Gemini</span><span class="sep">·</span>
+      <span>Claude</span><span class="sep">·</span>
+      <span>Antigravity</span><span class="sep">·</span>
+      <span>Content Creation</span><span class="sep">·</span>
+      <span>WhatsApp Automation</span><span class="sep">·</span>
+      <span>Organic Ads</span><span class="sep">·</span>
+      <span>Meta Ads</span><span class="sep">·</span>
+      <span>TikTok Ads</span><span class="sep">·</span>
+      <span>SnapChat Ads</span><span class="sep">·</span>
+      <span>Chat GPT</span><span class="sep">·</span>
+      <span>Gemini</span><span class="sep">·</span>
+      <span>Claude</span><span class="sep">·</span>
+      <span>Antigravity</span><span class="sep">·</span>
+      <span>Content Creation</span><span class="sep">·</span>
+      <span>WhatsApp Automation</span><span class="sep">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label">01 / About</div>
+      <div class="about-grid">
+
+        <!-- LEFT -->
+        <div class="about-left">
+          <div class="about-photo-wrap">
+            <div class="about-photo-placeholder">
+              <img src="profile.jpeg" alt="Mustufa Abbas" class="about-photo" />
+            </div>
+            <div class="about-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg> MDX Dubai
+            </div>
+          </div>
+          <div class="about-quick">
+            <div class="quick-item"><span class="q-label">Age</span><span class="q-val">20</span></div>
+            <div class="quick-item"><span class="q-label">Born</span><span class="q-val">Ujjain, India</span></div>
+            <div class="quick-item"><span class="q-label">Based</span><span class="q-val">Sharjah, UAE</span></div>
+            <div class="quick-item"><span class="q-label">Visa</span><span class="q-val">Work Visa · <span
+                  class="noc-pill">NOC Available ✓</span></span></div>
+            <div class="quick-item"><span class="q-label">Status</span><span class="q-val open-badge">Open to
+                Internship</span></div>
+            <div class="quick-divider"></div>
+            <div class="quick-item quick-contact-item">
+              <span class="q-label">UAE</span>
+              <a href="tel:+971543075952" class="q-val q-link">+971 54 307 5952</a>
+            </div>
+            <div class="quick-item quick-contact-item">
+              <span class="q-label">Kuwait</span>
+              <a href="tel:+96565517212" class="q-val q-link">+965 6551 7212</a>
+            </div>
+            <div class="quick-item quick-contact-item">
+              <span class="q-label">Email</span>
+              <a href="mailto:bagwalamustafa06@gmail.com" class="q-val q-link q-email">bagwalamustafa06@gmail.com</a>
+            </div>
+            <div class="quick-item quick-contact-item">
+              <span class="q-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mustafa-bagwala-28a6153b9/" target="_blank"
+                class="q-val q-link">mustafa-bagwala ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="about-right">
+          <h2 class="about-heading">A bit about<br /><em>my journey</em></h2>
+          <p class="about-body">Born in Ujjain, India — educated in Jaora and then Khaitan, Kuwait from UKG through
+            Grade 12. Now pursuing a BA (Hons) in Business Management (Marketing) at Middlesex University Dubai, while
+            working full-time at The Fab Stores.</p>
+          <p class="about-body">I'm a <strong>Hafiz-e-Quran</strong>, a self-taught developer, a digital marketer, and
+            someone who doesn't wait for opportunities — I build them.</p>
+
+          <!-- Education -->
+          <div class="edu-timeline">
+            <div class="edu-item reveal-scroll">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <div class="edu-school">Smart Indian School, Kuwait</div>
+                <div class="edu-degree">Secondary School Certificate — Grade 10</div>
+                <button class="grades-toggle" aria-expanded="false">View Grades <svg width="12" height="12"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg></button>
+                <div class="edu-grades collapsed">
+                  <span class="grade-chip">English 87%</span>
+                  <span class="grade-chip">Hindi 95%</span>
+                  <span class="grade-chip">Science 95%</span>
+                  <span class="grade-chip">Maths 99%</span>
+                  <span class="grade-chip">IT 98%</span>
+                  <span class="grade-chip highlight">Aggregate 96.4%</span>
+                </div>
+              </div>
+            </div>
+            <div class="edu-item reveal-scroll">
+              <div class="edu-dot"></div>
+              <div class="edu-content">
+                <div class="edu-school">Smart Indian School, Kuwait</div>
+                <div class="edu-degree">Higher Secondary Certificate — Grade 12</div>
+                <button class="grades-toggle" aria-expanded="false">View Grades <svg width="12" height="12"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M6 9l6 6 6-6" />
+                  </svg></button>
+                <div class="edu-grades collapsed">
+                  <span class="grade-chip">English 88%</span>
+                  <span class="grade-chip">Economics 88%</span>
+                  <span class="grade-chip">Business 90%</span>
+                  <span class="grade-chip">Accounts 95%</span>
+                  <span class="grade-chip">Informatics 97%</span>
+                  <span class="grade-chip">Web App 86%</span>
+                  <span class="grade-chip highlight">Aggregate 91.6%</span>
+                </div>
+              </div>
+            </div>
+            <div class="edu-item reveal-scroll">
+              <div class="edu-dot active"></div>
+              <div class="edu-content">
+                <div class="edu-school">Middlesex University Dubai</div>
+                <div class="edu-degree">BA (Hons) Business Management (Marketing)</div>
+                <div class="edu-grades">
+                  <span class="grade-chip active-chip">2025 – Present</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="lang-section">
+            <div class="lang-label">Languages</div>
+            <div class="lang-list">
+              <div class="lang-item"><span class="lang-name">English</span>
+                <div class="lang-bar">
+                  <div class="lang-fill" data-width="100"></div>
+                </div>
+                <span class="lang-pct">100%</span>
+              </div>
+              <div class="lang-item"><span class="lang-name">Hindi</span>
+                <div class="lang-bar">
+                  <div class="lang-fill" data-width="90"></div>
+                </div>
+                <span class="lang-pct">90%</span>
+              </div>
+              <div class="lang-item"><span class="lang-name">Urdu</span>
+                <div class="lang-bar">
+                  <div class="lang-fill" data-width="80"></div>
+                </div>
+                <span class="lang-pct">80%</span>
+              </div>
+              <div class="lang-item"><span class="lang-name">Arabic</span>
+                <div class="lang-bar">
+                  <div class="lang-fill" data-width="50"></div>
+                </div>
+                <span class="lang-pct">50%</span>
+              </div>
+              <div class="lang-item"><span class="lang-name">Gujarati</span>
+                <div class="lang-bar">
+                  <div class="lang-fill" data-width="50"></div>
+                </div>
+                <span class="lang-pct">50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS / WHAT I DO — DARK SECTION -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">02 / What I Do</div>
+      <h2 class="section-heading">I can do a lot<br /><em>for your business</em></h2>
+      <div class="capability-grid">
+
+        <!-- 1. Grow your brand — span 2 -->
+        <div class="cap-card cap-featured reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 3h7v9H3zM14 3h7v5h-7zM14 12h7v9h-7zM3 16h7v5H3z" />
+            </svg>
+          </div>
+          <h3>Grow your brand digitally</h3>
+          <p>End-to-end digital strategy — from zero to revenue. Paid campaigns on Meta, TikTok & Snapchat, organic
+            content, brand identity, and audience growth. I've taken a brand from scratch to 4x sales.</p>
+        </div>
+
+        <!-- 2. Research — span 1 -->
+        <div class="cap-card reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+          </div>
+          <h3>Research things for you</h3>
+          <p>Market research, competitor analysis, audience insights, and data-driven strategy using AI tools and
+            analytics platforms.</p>
+        </div>
+
+        <!-- 3. WhatsApp — span 1 -->
+        <div class="cap-card reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+            </svg>
+          </div>
+          <h3>Automate your WhatsApp</h3>
+          <p>Set up WATI integrations — chatbots, bulk messaging, and customer journey automation through WhatsApp
+            Business.</p>
+        </div>
+
+        <!-- 4. Build websites — span 2 -->
+        <div class="cap-card cap-wide reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3>Build websites for you</h3>
+          <p>Design and develop functional websites using WordPress and HTML/CSS/JS. Landing pages, e-commerce, custom
+            web apps with PHP & MySQL.</p>
+        </div>
+
+        <!-- 5. Write content — span 2 -->
+        <div class="cap-card cap-wide reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+            </svg>
+          </div>
+          <h3>Write content for you</h3>
+          <p>SEO-optimised articles, social captions, ad copy, email campaigns, and website content that speaks to your
+            audience.</p>
+        </div>
+
+        <!-- 6. Shoot & create — span 1 -->
+        <div class="cap-card reveal-scroll">
+          <div class="cap-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="23 7 16 12 23 17 23 7" />
+              <rect x="1" y="5" width="15" height="14" rx="2" />
+            </svg>
+          </div>
+          <h3>Shoot & create content</h3>
+          <p>Script, plan, and produce — short-form social videos, podcasts, graphics in Canva, editing in CapCut and
+            VN.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section class="section work-section" id="work">
+    <div class="container">
+      <div class="section-label">03 / Work Experience</div>
+      <h2 class="section-heading">Where I've<br /><em>made an impact</em></h2>
+
+      <!-- FEATURED: Royal Car Curtains -->
+      <div class="work-featured reveal-scroll" id="wk-rcc">
+        <div class="work-featured-header">
+          <div class="wf-left">
+            <div class="work-type-badge freelance">Freelance</div>
+            <div class="work-period">2023 – Present</div>
+            <h3 class="work-company">Royal Car Curtains</h3>
+            <div class="work-roles">
+              <span>Social Media Manager</span>
+              <span>Web Developer</span>
+              <span>Growth Strategist</span>
+            </div>
+            <div class="work-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Shuwaikh, Kuwait ·
+              <a href="https://royalcarcurtains.com" target="_blank" class="work-website-link">royalcarcurtains.com
+                ↗</a>
+            </div>
+            <div class="work-highlights">
+              <div class="highlight-item"><span class="h-num">4×</span><span class="h-label">Sales Growth</span></div>
+              <div class="highlight-item"><span class="h-num">3</span><span class="h-label">Ad Platforms</span></div>
+              <div class="highlight-item"><span class="h-num">WATI</span><span class="h-label">Automation</span></div>
+            </div>
+          </div>
+          <div class="wf-right">
+            <p class="work-summary">Took full ownership of a brand's digital presence from zero — built the website,
+              created a custom inventory management web app, integrated WhatsApp Business automation via WATI, and ran
+              paid campaigns across Meta, TikTok, and Snapchat. Result: <strong>4x increase in sales.</strong></p>
+            <div class="skill-tags wf-skills">
+              <span>Meta Ads</span><span>TikTok Ads</span><span>Snapchat Ads</span>
+              <span>HTML / CSS / JS</span><span>PHP & MySQL</span><span>WordPress</span>
+              <span>WATI WhatsApp</span><span>Canva</span><span>CapCut</span>
+            </div>
+            <button class="btn-expand" data-target="rcc-detail" aria-expanded="false">
+              <span class="btn-expand-text">View Full Case Study</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="work-detail collapsed" id="rcc-detail">
+          <div class="detail-inner">
+            <p class="work-desc">I took full ownership of Royal Car Curtains' digital presence from scratch — built the
+              website, created a custom inventory management web app (PHP & MySQL), integrated WhatsApp Business
+              automation using WATI (with chatbot and bulk messaging), and ran paid ad campaigns across Meta, TikTok,
+              and Snapchat. The result: <strong>4x increase in brand sales</strong> through a combined organic and paid
+              strategy.</p>
+
+            <div class="work-images-label">Screenshots & Deliverables</div>
+            <div class="work-images">
+              <div class="img-slot">
+                <a href="https://app.royalcarcurtains.com" target="_blank" class="img-link">
+                  <img class="img-ph img-16-9" src="app-royal.png">
+                </a>
+                <p class="img-caption">app.royalcarcurtains.com — PHP & MySQL</p>
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>WhatsApp / WATI</span></div>
+                <p class="img-caption">WhatsApp chatbot + bulk messaging via WATI</p>
+              </div>
+              <div class="img-slot">
+                <img class="img-ph img-16-9" src="royal-meta.png">
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>TikTok Ads Manager</span></div>
+                <p class="img-caption">Performance screenshots</p>
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>Snapchat Ads</span></div>
+                <p class="img-caption">Campaign dashboards — Snapchat</p>
+              </div>
+            </div>
+
+            <div class="work-ref">
+              <span class="ref-label">Reference</span>
+              <span class="ref-person">Mr. Mohammed</span>
+              <a href="mailto:hello@royalcarcurtains.com" class="ref-contact-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                hello@royalcarcurtains.com
+              </a>
+              <a href="tel:+96566019165" class="ref-contact-link">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+                +965 6601 9165
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURED: The Fab Stores -->
+      <div class="work-featured reveal-scroll" id="wk-fab">
+        <div class="work-featured-header">
+          <div class="wf-left">
+            <div class="work-type-badge full-time">Full-time</div>
+            <div class="work-period">2024 – Present</div>
+            <h3 class="work-company">The Fab Stores</h3>
+            <div class="work-roles">
+              <span>Sales Executive</span>
+              <span>Digital Manager</span>
+              <span>Web Developer</span>
+              <span>Accounts</span>
+            </div>
+            <div class="work-location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Sharjah, UAE ·
+              <a href="https://thefabstores.com" target="_blank" class="work-website-link">thefabstores.com ↗</a>
+            </div>
+            <div class="work-highlights">
+              <div class="highlight-item"><span class="h-num">Full</span><span class="h-label">Time Role</span></div>
+              <div class="highlight-item"><span class="h-num">4</span><span class="h-label">Roles</span></div>
+              <div class="highlight-item"><span class="h-num">WP</span><span class="h-label">Website</span></div>
+            </div>
+          </div>
+          <div class="wf-right">
+            <p class="work-summary">Promotional gifting company — managing sales, digital presence, website, and
+              accounts end-to-end. My employer is ready to provide a <strong>No Objection Certificate (NOC)</strong> for
+              internship purposes. No complications, no delays.</p>
+            <div class="skill-tags wf-skills">
+              <span>Sales</span><span>WordPress</span><span>Digital Marketing</span>
+              <span>Accounts</span><span>Client Management</span><span>Canva</span>
+            </div>
+            <button class="btn-expand" data-target="fab-detail" aria-expanded="false">
+              <span class="btn-expand-text">View Full Case Study</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="work-detail collapsed" id="fab-detail">
+          <div class="detail-inner">
+            <p class="work-desc">Working full-time at The Fab Stores — a promotional gifting company based in Sharjah,
+              UAE. Wearing four hats: Sales Executive, Digital Marketing Manager, Web Developer, and Accounts. Managing
+              end-to-end client relationships, the company website, social media presence, and financial records.</p>
+
+            <div class="work-images-label">Screenshots & Deliverables</div>
+            <div class="work-images">
+              <div class="img-slot">
+                <a href="https://thefabstores.com" target="_blank" class="img-link">
+                  <div class="img-ph img-16-9"><span>Website — thefabstores.com</span>
+                    <div class="img-overlay">Visit Site ↗</div>
+                  </div>
+                </a>
+                <p class="img-caption">Managed & maintained on WordPress</p>
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>Social Media Posts</span></div>
+                <p class="img-caption">Instagram & LinkedIn content</p>
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>Product Catalogue</span></div>
+                <p class="img-caption">Corporate gifting catalogue designs</p>
+              </div>
+              <div class="img-slot">
+                <div class="img-ph img-16-9"><span>Sales Records</span></div>
+                <p class="img-caption">Accounts & sales tracking</p>
+              </div>
+            </div>
+
+            <div class="work-ref">
+              <span class="ref-label">Reference</span>
+              <span class="ref-person">Mrs. Sakina</span>
+              <a href="mailto:hello@thefabstores.com" class="ref-contact-link">hello@thefabstores.com</a>
+              <a href="tel:+971503092280" class="ref-contact-link">+971 50 309 2280</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Small Work Cards -->
+      <div class="work-cards-grid">
+
+        <!-- Al Fazzaa Custom -->
+        <div class="work-card reveal-scroll" id="wk-faz">
+          <div class="work-card-header">
+            <div class="wc-top">
+              <div class="work-type-badge part-time">Part-time</div>
+              <div class="work-period">2023 – 2024</div>
+            </div>
+            <h3 class="work-company-sm">Al Fazzaa Custom</h3>
+            <div class="work-roles-sm">
+              <span>Sales Executive</span><span>Inventory Coordinator</span>
+            </div>
+            <div class="work-location-sm">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Kuwait
+            </div>
+            <p class="work-summary-sm">Managed sales and inventory coordination for a custom automotive accessories
+              retailer.</p>
+            <div class="skill-tags">
+              <span>Sales</span><span>Inventory Management</span><span>Customer Service</span><span>Automobile</span>
+            </div>
+            <button class="btn-expand-sm" data-target="faz-detail" aria-expanded="false">View Screenshots <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg></button>
+          </div>
+          <div class="work-detail collapsed" id="faz-detail">
+            <div class="detail-inner-sm">
+              <div class="work-images-label">Work Screenshots</div>
+              <div class="work-images">
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Store Interior</span></div>
+                  <p class="img-caption">Al Fazzaa showroom</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Inventory Records</span></div>
+                  <p class="img-caption">Stock coordination samples</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Sales Work</span></div>
+                  <p class="img-caption">On-floor sales activity</p>
+                </div>
+              </div>
+              <div class="work-ref">
+                <span class="ref-label">Reference</span>
+                <span class="ref-person">Mr. Hussain</span>
+                <a href="mailto:fazalabbasbagwala53@gmail.com"
+                  class="ref-contact-link">fazalabbasbagwala53@gmail.com</a>
+                <a href="tel:+96560959570" class="ref-contact-link">+965 6095 9570</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Webenliven -->
+        <div class="work-card reveal-scroll" id="wk-web">
+          <div class="work-card-header">
+            <div class="wc-top">
+              <div class="work-type-badge freelance">Freelance</div>
+              <div class="work-period">2022 – 2023</div>
+            </div>
+            <h3 class="work-company-sm">Webenliven</h3>
+            <div class="work-roles-sm">
+              <span>Content Writer</span>
+            </div>
+            <div class="work-location-sm">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Dubai, UAE
+            </div>
+            <p class="work-summary-sm">Wrote SEO-optimised web content and articles for a digital agency serving
+              international clients.</p>
+            <div class="skill-tags">
+              <span>Content Writing</span><span>SEO</span><span>Copywriting</span><span>WordPress</span>
+            </div>
+            <button class="btn-expand-sm" data-target="web-detail" aria-expanded="false">View Screenshots <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg></button>
+          </div>
+          <div class="work-detail collapsed" id="web-detail">
+            <div class="detail-inner-sm">
+              <div class="work-images-label">Work Screenshots</div>
+              <div class="work-images">
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Published Articles</span></div>
+                  <p class="img-caption">SEO content published on client sites</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Content Calendar</span></div>
+                  <p class="img-caption">Planning & delivery samples</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Agency Work</span></div>
+                  <p class="img-caption">Webenliven agency deliverables</p>
+                </div>
+              </div>
+              <div class="work-ref">
+                <span class="ref-label">Reference</span>
+                <span class="ref-person">Mr. Huzefa</span>
+                <a href="mailto:hello@webenliven.com" class="ref-contact-link">hello@webenliven.com</a>
+                <a href="tel:+971504520900" class="ref-contact-link">+971 50 452 0900</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hiplay -->
+        <div class="work-card reveal-scroll" id="wk-hip">
+          <div class="work-card-header">
+            <div class="wc-top">
+              <div class="work-type-badge part-time">Part-time</div>
+              <div class="work-period">2022 – 2023</div>
+            </div>
+            <h3 class="work-company-sm">Hiplay</h3>
+            <div class="work-roles-sm">
+              <span>Website Manager</span><span>Sales Manager</span>
+            </div>
+            <div class="work-location-sm">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Kuwait
+            </div>
+            <p class="work-summary-sm">Managed website operations and sales for a tech & gadgets retailer in
+              Kuwait.</p>
+            <div class="skill-tags">
+              <span>Website Management</span><span>Sales</span><span>Tech & Gadgets</span><span>E-Commerce</span>
+            </div>
+            <button class="btn-expand-sm" data-target="hip-detail" aria-expanded="false">View Screenshots <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg></button>
+          </div>
+          <div class="work-detail collapsed" id="hip-detail">
+            <div class="detail-inner-sm">
+              <div class="work-images-label">Work Screenshots</div>
+              <div class="work-images">
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Website Dashboard</span></div>
+                  <p class="img-caption">Hiplay website management</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Product Listings</span></div>
+                  <p class="img-caption">E-commerce product uploads</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Sales Activity</span></div>
+                  <p class="img-caption">Sales & customer handling</p>
+                </div>
+              </div>
+              <div class="work-ref">
+                <span class="ref-label">Reference</span>
+                <span class="ref-person">Mr. Kasim</span>
+                <a href="tel:+96599289143" class="ref-contact-link">+965 9928 9143</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fix Fury -->
+        <div class="work-card reveal-scroll" id="wk-fix">
+          <div class="work-card-header">
+            <div class="wc-top">
+              <div class="work-type-badge part-time">Part-time</div>
+              <div class="work-period">2022</div>
+            </div>
+            <h3 class="work-company-sm">Fix Fury</h3>
+            <div class="work-roles-sm">
+              <span>Accounts Executive</span>
+            </div>
+            <div class="work-location-sm">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg> Kuwait
+            </div>
+            <p class="work-summary-sm">Handled accounts and financial records for an electronics repair business.</p>
+            <div class="skill-tags">
+              <span>Accounts</span><span>Financial Records</span><span>Excel</span><span>Bookkeeping</span>
+            </div>
+            <button class="btn-expand-sm" data-target="fix-detail" aria-expanded="false">View Screenshots <svg
+                width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M6 9l6 6 6-6" />
+              </svg></button>
+          </div>
+          <div class="work-detail collapsed" id="fix-detail">
+            <div class="detail-inner-sm">
+              <div class="work-images-label">Work Screenshots</div>
+              <div class="work-images">
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Accounts Sheets</span></div>
+                  <p class="img-caption">Excel bookkeeping records</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Repair Logs</span></div>
+                  <p class="img-caption">Financial tracking for repairs</p>
+                </div>
+                <div class="img-slot">
+                  <div class="img-ph img-16-9"><span>Invoices</span></div>
+                  <p class="img-caption">Invoice and billing records</p>
+                </div>
+              </div>
+              <div class="work-ref">
+                <span class="ref-label">Reference</span>
+                <span class="ref-person">Mr. Hussain</span>
+                <a href="mailto:husainbohra52@gmail.com" class="ref-contact-link">husainbohra52@gmail.com</a>
+                <a href="tel:+96541005253" class="ref-contact-link">+965 4100 5253</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CREATIVES — DARK SECTION -->
+  <section class="section creatives-section" id="creatives">
+    <div class="container">
+      <div class="section-label">04 / Creatives</div>
+      <h2 class="section-heading">Things I've<br /><em>made</em></h2>
+      <p class="creatives-sub">A selection of designs, ads, and content I've created across brands and campaigns.</p>
+
+      <div class="creatives-grid" id="creativesGrid">
+        <div class="creative-card reveal-scroll">
+          <div class="creative-img img-16-9"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Social Media</span>
+            <h4 class="creative-title">Ramadan Campaign</h4>
+            <p class="creative-desc">Promotional series for Royal Car Curtains — Ramadan 2024</p>
+          </div>
+        </div>
+        <div class="creative-card reveal-scroll">
+          <div class="creative-img img-9-16"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Ad Creative</span>
+            <h4 class="creative-title">Product Launch Reel</h4>
+            <p class="creative-desc">Short-form video ad for Instagram & TikTok</p>
+          </div>
+        </div>
+        <div class="creative-card reveal-scroll">
+          <div class="creative-img img-1-1"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Print</span>
+            <h4 class="creative-title">Gift Catalogue Cover</h4>
+            <p class="creative-desc">Annual catalogue design for The Fab Stores</p>
+          </div>
+        </div>
+        <div class="creative-card reveal-scroll">
+          <div class="creative-img img-4-5"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Social Media</span>
+            <h4 class="creative-title">Brand Post — Al Fazzaa</h4>
+            <p class="creative-desc">Instagram feed post for automotive accessories</p>
+          </div>
+        </div>
+
+        <!-- Hidden rows -->
+        <div class="creative-card creative-hidden reveal-scroll">
+          <div class="creative-img img-16-9"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Video Thumbnail</span>
+            <h4 class="creative-title">YouTube Thumbnail</h4>
+            <p class="creative-desc">Custom thumbnail design for product reviews</p>
+          </div>
+        </div>
+        <div class="creative-card creative-hidden reveal-scroll">
+          <div class="creative-img img-4-3"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Ad Creative</span>
+            <h4 class="creative-title">Banner Ad — Hiplay</h4>
+            <p class="creative-desc">Web banner for tech & gadgets promotion</p>
+          </div>
+        </div>
+        <div class="creative-card creative-hidden reveal-scroll">
+          <div class="creative-img img-1-1"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Social Media</span>
+            <h4 class="creative-title">Event Announcement</h4>
+            <p class="creative-desc">Event post design for promotional campaign</p>
+          </div>
+        </div>
+        <div class="creative-card creative-hidden reveal-scroll">
+          <div class="creative-img img-3-4"><span class="img-placeholder-text">Upload your image</span></div>
+          <div class="creative-info">
+            <span class="creative-cat">Print</span>
+            <h4 class="creative-title">Brochure Design</h4>
+            <p class="creative-desc">Tri-fold brochure for corporate gifting</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="creatives-more">
+        <button class="btn-view-more" id="creativesToggle">
+          <span id="creativesToggleText">+ View All Work</span>
+          <svg id="creativesToggleIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achieve-section" id="achievements">
+    <div class="container">
+      <div class="section-label">05 / Achievements</div>
+      <h2 class="section-heading">A few things<br /><em>I'm proud of</em></h2>
+      <div class="achieve-grid">
+        <div class="achieve-card achieve-featured reveal-scroll">
+          <div class="achieve-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L9.1 8.6 2 9.3l5 4.8-1.5 7L12 17.8l6.5 3.3-1.5-7 5-4.8-7.1-.7z" />
+            </svg>
+          </div>
+          <div class="achieve-title">Hafiz-e-Quran</div>
+          <div class="achieve-desc">Memorised the entire Holy Quran — a lifelong achievement requiring years of
+            discipline, focus, and dedication.</div>
+        </div>
+        <div class="achieve-card reveal-scroll">
+          <div class="achieve-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+            </svg>
+          </div>
+          <div class="achieve-title">AI Certification</div>
+          <div class="achieve-desc">Artificial Intelligence — Samsung Innovation Campus (2025). Formal training in AI &
+            Machine Learning fundamentals.</div>
+        </div>
+        <div class="achieve-card reveal-scroll">
+          <div class="achieve-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+              <polyline points="16 7 22 7 22 13" />
+            </svg>
+          </div>
+          <div class="achieve-title">4× Sales Growth</div>
+          <div class="achieve-desc">Grew Royal Car Curtains' sales by 4x through an independently designed and executed
+            digital strategy.</div>
+        </div>
+        <div class="achieve-card reveal-scroll">
+          <div class="achieve-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <div class="achieve-title">Self-Taught Developer</div>
+          <div class="achieve-desc">Built multiple live websites and a custom web application independently — no agency,
+            no team, just learning and doing.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — DARK SECTION -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-heading">Let's work<br /><em>together</em></h2>
+
+      <!-- Contact Banner -->
+      <div class="contact-banner reveal-scroll">
+        <div class="contact-banner-inner">
+          <div class="contact-banner-left">
+            <div class="contact-banner-title">Reach me directly</div>
+            <p class="contact-banner-sub">Currently on a <strong>Work Visa</strong> in the UAE. My employer (The Fab
+              Stores) is ready to provide a <strong>NOC</strong> for internship purposes — <span
+                class="noc-highlight">"No Objection Certificate" available immediately.</span></p>
+          </div>
+          <div class="contact-banner-cards">
+            <a href="tel:+971543075952" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div class="contact-label">Phone (UAE)</div>
+              <div class="contact-val">+971 54 307 5952</div>
+            </a>
+            <a href="tel:+96565517212" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              <div class="contact-label">Phone (Kuwait)</div>
+              <div class="contact-val">+965 6551 7212</div>
+            </a>
+            <a href="mailto:bagwalamustafa06@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div class="contact-label">Email</div>
+              <div class="contact-val">bagwalamustafa06@gmail.com</div>
+            </a>
+            <a href="https://www.linkedin.com/in/mustafa-bagwala-28a6153b9/" target="_blank" class="contact-card">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-val">mustafa-bagwala ↗</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- References Panel — below banner -->
+      <div class="references-panel reveal-scroll">
+        <div class="ref-heading">References</div>
+        <div class="ref-grid">
+          <div class="ref-card">
+            <div class="ref-company">Royal Car Curtains</div>
+            <div class="ref-name">Mr. Mohammed</div>
+            <div class="ref-links">
+              <a href="mailto:hello@royalcarcurtains.com" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg> Email</a>
+              <a href="tel:+96566019165" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-company">Al Fazzaa Custom</div>
+            <div class="ref-name">Mr. Hussain</div>
+            <div class="ref-links">
+              <a href="mailto:fazalabbasbagwala53@gmail.com" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg> Email</a>
+              <a href="tel:+96560959570" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-company">The Fab Stores</div>
+            <div class="ref-name">Mrs. Sakina</div>
+            <div class="ref-links">
+              <a href="mailto:hello@thefabstores.com" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg> Email</a>
+              <a href="tel:+971503092280" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-company">Fix Fury</div>
+            <div class="ref-name">Mr. Hussain</div>
+            <div class="ref-links">
+              <a href="mailto:husainbohra52@gmail.com" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg> Email</a>
+              <a href="tel:+96541005253" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-company">Webenliven</div>
+            <div class="ref-name">Mr. Huzefa</div>
+            <div class="ref-links">
+              <a href="mailto:hello@webenliven.com" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg> Email</a>
+              <a href="tel:+971504520900" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+          <div class="ref-card">
+            <div class="ref-company">Hiplay</div>
+            <div class="ref-name">Mr. Kasim</div>
+            <div class="ref-links">
+              <a href="tel:+96599289143" class="ref-contact-link">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg> Call</a>
+            </div>
+          </div>
+        </div>
+        <p class="ref-note">* Full reference details available upon request</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
